@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Mansur - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #fd5a1e 0%, #ff6b35 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .bio-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .bio-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .contact-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .contact-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+            background: linear-gradient(135deg, #2980b9, #1f5f8b);
+        }
+
+        .contact-link.linkedin {
+            background: linear-gradient(135deg, #0077b5, #005885);
+            box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+        }
+
+        .contact-link.linkedin:hover {
+            box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+            background: linear-gradient(135deg, #005885, #004066);
+        }
+
+        .contact-link.github {
+            background: linear-gradient(135deg, #333, #24292e);
+            box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+        }
+
+        .contact-link.github:hover {
+            box-shadow: 0 8px 25px rgba(51, 51, 51, 0.4);
+            background: linear-gradient(135deg, #24292e, #1b1f23);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-link {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Eric Mansur</h1>
+            <p class="title">Software Developer & Technology Enthusiast</p>
+        </header>
+
+        <section class="bio-section">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                Hello! I'm Eric, a passionate software developer with a love for creating innovative solutions and learning new technologies. 
+                I enjoy working on challenging projects that push the boundaries of what's possible in software development.
+                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                or sharing knowledge with the developer community.
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="contact-title">Get In Touch</h2>
+            <div class="contact-links">
+                <a href="mailto:eric@example.com" class="contact-link">Email Me</a>
+                <a href="https://www.linkedin.com/in/eric-mansur" class="contact-link linkedin" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
